@@ -1,6 +1,16 @@
 {
 	"pages": [ 
 		{
+			"path": "pages/category/index",
+			"style": {
+				"navigationBarTitleText": "优购分类",
+				"usingComponents": {
+					"van-search": "/wxcomponents/dist/search/index",
+					"van-tree-select": "/wxcomponents/dist/tree-select/index"
+				}
+			}
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "优购首页",
@@ -10,15 +20,15 @@
 			}
 		},
 		{
-			"path": "pages/category/index",
-			"style": {
-				"navigationBarTitleText": "优购分类"
-			}
-		},
-		{
 			"path": "pages/goods_list/index",
 			"style": {
-				"navigationBarTitleText": "优购商品列表"
+				"navigationBarTitleText": "优购商品列表",
+				"usingComponents": {
+					"van-search": "/wxcomponents/dist/search/index",
+					"van-tab": "/wxcomponents/dist/tab/index",
+					"van-tabs": "/wxcomponents/dist/tabs/index",
+					"van-card": "/wxcomponents/dist/card/index"
+				}
 			}
 		},
 		{
