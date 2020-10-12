@@ -1,6 +1,7 @@
 <template>
 	<view >
 		<!-- 搜索框 -->
+		<search-bar @click="tiaozhuan"></search-bar>
     <!-- 轮播图 -->
 		<view class="index-swiper">
 			<swiper indicator-dots autoplay circular>
@@ -37,7 +38,11 @@
 </template>
 
 <script>
+import SearchBar from '@/components/SearchBar'
 	export default {
+		components: {
+      SearchBar
+    },
 		data() {
 			return {
 				//轮播图数据
@@ -65,6 +70,13 @@
 		  async	footTitle1() {
 				//发送楼层请求
 				this.footList=await this.get({url:"/home/floordata"})
+			},
+			//点击搜索框跳转到搜索页面
+			tiaozhuan() {
+				console.log(111);
+				uni.navigateTo({
+   			  url: '/pages/search/index'
+				});
 			}
 		}
 	}

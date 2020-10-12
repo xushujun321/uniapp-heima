@@ -3,7 +3,10 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "优购首页"
+				"navigationBarTitleText": "优购首页",
+				"usingComponents": {
+					"van-search": "/wxcomponents/dist/search/index"
+				}
 			}
 		},
 		{
