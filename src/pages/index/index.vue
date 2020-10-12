@@ -73,7 +73,6 @@ import SearchBar from '@/components/SearchBar'
 			},
 			//点击搜索框跳转到搜索页面
 			tiaozhuan() {
-				console.log(111);
 				uni.navigateTo({
    			  url: '/pages/search/index'
 				});
